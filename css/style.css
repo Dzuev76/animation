@@ -1,0 +1,139 @@
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+
+@keyframes rocket {
+  from {
+    margin-left: -100px;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  to {
+    margin-left: 1266px;
+    opacity: 0;
+  }
+}
+
+@keyframes grass {
+  from {
+    -ms-background-position: -1366px 0;
+    background-position: -1366px 0;
+  }
+
+  to {
+     -ms-background-position: 1366px 0;
+    background-position: 1366px 0;
+  }
+}
+
+@keyframes car {
+  100% {
+     transform: rotate(360deg);
+  }
+}
+
+.mountain {
+  background-image: url(../img/mountain.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-origin: content-box;
+  height: 600px;
+  width: 1366px;
+}
+
+.rocket {
+  background-image: url(../img/rocket.jpg);
+  background-repeat: repeat-x;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  animation: rocket  30s infinite linear;
+}
+
+.car {
+  background-image: url(../img/car-4.png);
+  height: 254px;
+  width: 600px;
+  position: absolute;
+  bottom: 0;
+  z-index: 98;
+  left: 400px;
+}
+
+.grass {
+  background-image: url(../img/grass.jpg);
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  height: 115px;
+  width: 1366px;
+  z-index: 99;
+  animation: grass  60s infinite linear;
+}
+
+.flower {
+  background-image: url(../img/flower.png);
+  position: absolute;
+  bottom: 0;
+  height: 61px;
+  width: 1366px;
+  z-index: 99;
+  animation: grass  170s infinite linear;
+}
+
+.car-1 {
+  background-image: url(../img/car-1.png);
+  height: 87px;
+  width: 87px;
+  position: absolute;
+  bottom: 45px;
+  left: 825px;
+  z-index: 98;
+  animation: car  1s infinite linear reverse;
+}
+
+.car-2 {
+  background-image: url(../img/car-2.png);
+  height: 87px;
+  width: 87px;
+  position: absolute;
+  bottom: 45px;
+  left: 485px;
+  z-index: 98;
+  animation: car  1s infinite linear reverse;
+}
+
+.tree {
+  background-image: url(../img/tree.png);
+  position: absolute;
+  bottom: 0;
+  height: 273px;
+  width: 1366px;
+  z-index: 0;
+  animation: grass  70s infinite linear;
+}
+
+@media (max-width:1279px) {
+
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+
+}
+
+@media (max-width:575px) {
+
+}
+
+
